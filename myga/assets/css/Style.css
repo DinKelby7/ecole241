@@ -1,11 +1,39 @@
 
+
 *{margin: 0;}
 /*premier block avec la barre de navigation ;le logo;la barre de recherche et l'option de changement de langue :-) */
 .logo{position: relative;
 left: 600px;
-top:300px;}
+bottom:500px;
+font-family: 'Comfortaa',cursive;
+font-size: 100px;
+color: green}
 .user{position: relative;
 left: 120px;}
+.img1{position: relative;
+left: 300px;
+width: 800px;
+height: 500px;
+border-radius: 20px;
+box-shadow: 0 0 60px grey;
+animation: fade 20s infinite;}
+@keyframes fade{
+    20%{
+        background-image: url(assets/img/2.jpg)
+    }
+    40%{
+        background-image: url(assets/img/3.jpg)
+    }
+    60%{
+        background-image: url(assets/img/4.jpg)
+    }
+    80%{
+        background-image: url(assets/img/5.jpg)
+    }
+    100%{
+        background-image: url(assets/img/2.jpg)
+    }
+}
 
 nav > ul{list-style-type: none;
   margin: 0;
@@ -37,32 +65,47 @@ border-radius: 10px;}
 left: 400px;}
 select{position: relative;
 left: 1250px;
-bottom: 35px;
+bottom: 40px;
 border: 1px solid white;
 border-radius: 15px;
 font-family: 'Comfortaa', cursive;
-color: #4CAF50;}
+font-weight: bold;
+color: #4CAF50;
+padding: 3px;
+}
 .go{position: relative;
 left: 450px;
-top: 160px;}
+bottom:440px;
+border-radius: 10px;}
+.go:hover{margin-left: 5px;
+transition: 0.4s;}
+.reg{position: relative;
+left: 480px;
+bottom: 450px;
+font-family: 'Comfortaa', cursive;
+font-weight: bold;
+color: white;
+text-shadow: 2px 2px 8px #888888}
 input[type=text]{ width: 130px;
   box-sizing: border-box;
   border: 2px solid #4CAF50 ;
-  border-radius: 20px;
+  border-radius:15px;
   font-size: 16px;
+  padding-left: 10px; 
   background-color: white;
   position: relative;
   width:500px;
   height: 60px;
-  left: 430px;
-  top: 150px;}
-top: 400px}
-body{margin: 0;}
+  left:430px;
+  bottom: 450px;
+  box-shadow: 5px 10px 18px #888888;}
+body{margin: 0;
+padding: 0;}
 
 /*Second block avec les infos de pied de page*/
 
 .tab1 td{position: relative;
- top: 400px;
+ bottom:42px;
 border: 1px solid white;
 padding: 10px;}
 .tab1 td a{text-decoration: none;
@@ -71,24 +114,10 @@ color:darkslategrey;
 font-family: 'Poppins', sans-serif;
 font-size: 13px;}
 
-/*Sous-block avec un petit style de couleur pour les patriotes*/
-
-.whois:hover{color: green;
-transition: 0.4s;}
-.pol:hover{color: yellow;
-transition: 0.4s;}
-.b-e:hover{color: blue;
-transition: 0.4s;}
-.faq:hover{color: green;
-transition: 0.4s;}
-.api:hover{color: yellow;
-transition: 0.4s;}
-.contact:hover{color: blue;
-transition: 0.4s;}
 
 .tab2 td{position: relative;
 left: 1100px;
-top: 340px;
+bottom: 100px;
 border: 1px solid white;
 padding: 10px;}
 .tab2 td a{text-decoration: none;
