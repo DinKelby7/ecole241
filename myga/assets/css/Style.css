@@ -1,0 +1,89 @@
+
+*{margin: 0;}
+/*premier block avec la barre de navigation ;le logo;la barre de recherche*/
+.logo{position: relative;
+left: 600px;
+top:300px;}
+.user{position: relative;
+left: 120px;}
+
+nav > ul{list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4CAF50;
+  border: 1px solid white;
+  border-radius: 18px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  font-weight: bold;}
+
+li{float: left;
+ position: relative;
+ left: 250px;
+}
+
+li a{display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition:0.6s;}
+li a:hover{background-color:white;
+color: #4CAF50;
+border: 1px solid #4CAF50;
+border-radius: 10px;}
+.admin{position: relative;
+left: 450px;}
+
+input[type=text]{ width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #4CAF50 ;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  position: relative;
+  width:500px;
+  height: 60px;
+  left: 430px;
+  top: 150px;}
+top: 400px}
+body{margin: 0;}
+
+/*Second block avec les infos de pied de page*/
+
+.tab1 td{position: relative;
+ top: 400px;
+border: 1px solid white;
+padding: 10px;}
+.tab1 td a{text-decoration: none;
+font-weight:bold;
+color:darkslategrey;
+font-family: 'Poppins', sans-serif;
+font-size: 13px;}
+
+/*Sous-block avec un petit style de couleur pour les patriotes*/
+
+.whois:hover{color: green;
+transition: 0.4s;}
+.pol:hover{color: yellow;
+transition: 0.4s;}
+.b-e:hover{color: blue;
+transition: 0.4s;}
+.faq:hover{color: green;
+transition: 0.4s;}
+.api:hover{color: yellow;
+transition: 0.4s;}
+.contact:hover{color: blue;
+transition: 0.4s;}
+
+.tab2 td{position: relative;
+left: 1100px;
+top: 340px;
+border: 1px solid white;
+padding: 10px;}
+.tab2 td a{text-decoration: none;
+color:darkslategrey;
+font-weight: bold;
+font-family: 'Poppins', sans-serif;
+font-size: 13px;}
