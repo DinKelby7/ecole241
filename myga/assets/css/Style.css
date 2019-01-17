@@ -84,7 +84,7 @@ input:focus{outline: none;}
     position: relative;
     left: 300px;
     width: 800px;
-    height: 500px;
+    height: 460px;
     background: url("../img/1.jpg");
     animation: fade 20s infinite;
     border-radius: 15px;}
