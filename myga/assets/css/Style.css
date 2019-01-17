@@ -82,7 +82,7 @@ input[type=text]{ width: 130px;
 input:focus{outline: none;}
 .slider{
     position: relative;
-    left: 300px;
+    left: 330px;
     width: 800px;
     height: 460px;
     background: url("../img/1.jpg");
