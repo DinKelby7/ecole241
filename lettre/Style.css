@@ -1,7 +1,12 @@
-<<<<<<< HEAD
+.letter{
+    border: 1px solid black;
+    height: 800px;
+    background-color:floralwhite
+}
 .date{
     position: relative;
-    left: 75%;
+    left: 650px;
+    bottom: 20px
 }
 h5{
     text-align: center;
@@ -14,11 +19,13 @@ h5{
     text-indent: 15px;
 }
 body{
-    border: 1px solid black;
+    
     width: 60%;
     margin: auto;
     height: 50em;
 }
+.letter:hover{box-shadow: 10px 10px 10px 10px #888888;
+transition: 0.6s}
 .sign{
     position:absolute;
     bottom: -50px;
@@ -26,33 +33,3 @@ body{
 }
 .info{
     margin-left: 10px;
-=======
-.date{
-    position: relative;
-    left: 75%;
-}
-h5{
-    text-align: center;
-    font-size: 20px;
-    text-decoration: underline;
-}
-.lt{
-    text-align: justify;
-    margin: 15px;
-    text-indent: 15px;
-}
-body{
-    border: 1px solid black;
-    width: 60%;
-    margin: auto;
-    height: 50em;
-}
-.sign{
-    position:absolute;
-    bottom: -50px;
-    right: 308px;
-}
-.info{
-    margin-left: 10px;
->>>>>>> 674a18595d15a99bd0fc8feaf245d4f37aa80c72
-}
