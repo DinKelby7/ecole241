@@ -1,36 +1,108 @@
 <!doctype html>
 
-<html>
+<html lang="fr">
 	<head>
 		<title>Portfolio</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" href="/assets/css/style.css">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/assets/css/porto.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="block">
+			<div class="nav1">
+				<nav>
+					<ul>
+						<li><a href="">Okacode</a></li>
+						<li><a href="">Contact</a></li>
+						<div class="ligne"></div>
+					</ul>
+				</nav>
+			</div>
+			<div class="nav2">
+				<nav>
+					<ul>
+						<li><a href="">Acceuil</a></li>
+						<li><a href="">Compétences</a></li>
+						<li><a href="">Projets</a></li>
+						<div class="ligne"></div>
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!--		Partie avec mes skills et une photo de moi-->
+		<div class="block2">
 			<div>
+				<div class="cadre">
+				</div>
+			</div>
+			<div>
+				<h1>Mes Compétences</h1>
+				<p>Vous avez ici un aperçus general de mes compétences,libre a vous des les analyser et me faire un "feedback" pour toutes vos intérrogations </p>
+				<!--					barre de progressions-->
+				<hr>
 				<div>
-					<div>
-						<ul class="nav-bar">
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Okacode</a></li>
-						</ul>
-						<ul class="nav-bar2">
-							<li><a href="#">Acceuil</a></li>
-							<li><a href="#">Compétences</a></li>
-							<li><a href="#">Projets</a></li>
-						</ul>
+					<div class="progress-bar-container">
+						<p>HTML</p>
+						<div class="progress-bar stripes" >
+							<span class="progress-bar-inner" style="width: 300px"></span>
+						</div>
+						<p>CSS</p>
+						<div class="progress-bar stripes animated reverse slower">
+							<span class="progress-bar-inner" style="width: 250px"></span>
+						</div>
+						<p>Esprit d'équipe</p>
+						<div class="progress-bar stripes animated reverse slower">
+							<span class="progress-bar-inner" style="width: 350px"></span>
+						</div>
+						<p>Technique</p>
+						<div class="progress-bar stripes animated reverse slower">
+							<span class="progress-bar-inner" style="width: 200px"></span>
+						</div>
+						<p>Bootstrap</p>
+						<div class="progress-bar stripes animated reverse slower">
+							<span class="progress-bar-inner" style="width: 100px"></span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div style="background-color:deepskyblue">
-				<div class="col-md-3"></div>
-				<div class="col-md-3">.col-sm-3</div>
+		</div>
+		<!--		troisieme partie avec slide qui montre mes projets-->
+		<div class="block3">
+			<div class="slider">
+
 			</div>
+			<div class="formation">
+				<h1>Ma formation</h1>	
+			</div>
+		</div>
+		<div class="block4">
+			<h1>Mes Projets</h1>
+			<p>Une petite selection de mes recents projets</p>
+			<ul>
+				<li><a href=""></a>Myga</li>
+				<li><a href=""></a>Deshimag</li>
+				<li><a href=""></a>Lettre de motivation</li>
+				<li><a href=""></a>QCM</li>
+			</ul>
+		</div>
+		<!--		Avant derniere partie aec un slide qui montre de photo de l'ecole-->
+
+		<!--			Derniere partie avec mes contact-->
+		<div class="block5">
+			<footer>
+				<div class="form-style-8">
+					<h2>Contactez-moi</h2>
+					<form>
+						<input type="text" name="field1" placeholder="Nom" />
+						<input type="email" name="field2" placeholder="Email" />
+						<textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+						<input type="button" value="Envoyer"/>
+					</form>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
