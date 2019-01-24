@@ -4,6 +4,7 @@
 	<head>
 		<title>Portfolio</title>
 		<link rel="stylesheet" href="/assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
@@ -14,87 +15,111 @@
 			<div class="nav1">
 				<nav>
 					<ul>
-						<li><a href="">Okacode</a></li>
+						<li><a href="#partie-2">Okacode</a></li>
 						<li><a href="">Contact</a></li>
 						<div class="ligne"></div>
 					</ul>
 				</nav>
 			</div>
+
 			<div class="nav2">
 				<nav>
 					<ul>
 						<li><a href="">Acceuil</a></li>
 						<li><a href="">Compétences</a></li>
 						<li><a href="">Projets</a></li>
-						<div class="ligne"></div>
-
 					</ul>
 				</nav>
 			</div>
+			<div>
+				<h1>DIN <br>KELBY</h1>
+				<cite>People are not what they are; <br>
+					they are what they do</cite>
+			</div>
+
 		</div>
-		<!--		Partie avec mes skills et une photo de moi-->
-		<div class="block2">
+		<!--		2e Partie avec mes skills et une photo de moi-->
+		<div class="block2" id="partie-2">
 			<div>
 				<div class="cadre">
 				</div>
 			</div>
 			<div>
 				<h1>Mes Compétences</h1>
-				<p>Vous avez ici un aperçus general de mes compétences,libre a vous des les analyser et me faire un "feedback" pour toutes vos intérrogations </p>
+				<p class="intro">Vous avez ici un aperçus general de mes compétences,libre a vous des les analyser et me faire un "feedback" pour toutes vos intérrogations </p>
 				<!--					barre de progressions-->
-				<hr>
 				<div>
 					<div class="progress-bar-container">
 						<p>HTML</p>
-						<div class="progress-bar stripes" >
+						<div class="progress-bar stripes" style="background-color:transparent">
 							<span class="progress-bar-inner" style="width: 300px"></span>
 						</div>
 						<p>CSS</p>
-						<div class="progress-bar stripes animated reverse slower">
+						<div class="progress-bar stripes animated reverse slower" style="background-color:transparent">
 							<span class="progress-bar-inner" style="width: 250px"></span>
 						</div>
 						<p>Esprit d'équipe</p>
-						<div class="progress-bar stripes animated reverse slower">
+						<div class="progress-bar stripes animated reverse slower" style="background-color:transparent">
 							<span class="progress-bar-inner" style="width: 350px"></span>
 						</div>
 						<p>Technique</p>
-						<div class="progress-bar stripes animated reverse slower">
+						<div class="progress-bar stripes animated reverse slower" style="background-color:transparent">
 							<span class="progress-bar-inner" style="width: 200px"></span>
 						</div>
 						<p>Bootstrap</p>
-						<div class="progress-bar stripes animated reverse slower">
+						<div class="progress-bar stripes animated reverse slower" style="background-color:transparent">
 							<span class="progress-bar-inner" style="width: 100px"></span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--		troisieme partie avec slide qui montre mes projets-->
-		<div class="block3">
-			<div class="slider">
+		<!--		troisieme partie avec mes methode de travail-->
 
+		<div class="block3">
+			<h1>Mes méthodes de travail</h1>
+			<div class="container">
+				<img src="/assets/img/veille-technologique2.jpg" alt="veille-technologie" class="image">
+				<div class="overlay">
+					<div class="text">Veille Technologie</div>
+					<a href="" class="info">lire plus</a>
+				</div>
 			</div>
-			<div class="formation">
-				<h1>Ma formation</h1>	
+			<div class="container">
+				<img src="/assets/img/maquettage.png" alt="maquettage" class="image">
+				<div class="overlay">
+					<div class="text">Maquettage</div>
+					<a href="" class="info">lire plus</a>
+				</div>
+			</div>
+			<div class="container">
+				<img src="/assets/img/Methode%20agile2.jpg" alt="scrum" class="image">
+				<div class="overlay">
+					<div class="text">Méthodes agiles</div>
+					<a href="" class="info">lire plus</a>
+				</div>
 			</div>
 		</div>
-		<div class="block4">
+		<div class="block4" id="partie-4">
 			<h1>Mes Projets</h1>
-			<p>Une petite selection de mes recents projets</p>
-			<ul>
-				<li><a href=""></a>Myga</li>
-				<li><a href=""></a>Deshimag</li>
-				<li><a href=""></a>Lettre de motivation</li>
-				<li><a href=""></a>QCM</li>
-			</ul>
+			<h3>Une petite selection de mes recents projets</h3>
+			<div class="flex-container">
+				<div>Deshimag</div>
+				<div>Myga</div>
+				<div>Lettre de motivation</div>  
+			</div>
+			<div class="flex-container">
+				<div>QCM</div>
+				<div>Défi</div>
+				<div>Emploi du temps</div>  
+			</div>
 		</div>
-		<!--		Avant derniere partie aec un slide qui montre de photo de l'ecole-->
 
 		<!--			Derniere partie avec mes contact-->
-		<div class="block5">
+		<div class="block5" id="partie-5">
 			<footer>
 				<div class="form-style-8">
-					<h2>Contactez-moi</h2>
+					<h2>Feedback</h2>
 					<form>
 						<input type="text" name="field1" placeholder="Nom" />
 						<input type="email" name="field2" placeholder="Email" />
@@ -102,6 +127,13 @@
 						<input type="button" value="Envoyer"/>
 					</form>
 				</div>
+				<p>Suivez-moi</p>
+				<ul>
+					<li><img src="/assets/img/icons/instagram.png" alt=""></li>
+					<li><img src="/assets/img/icons/linkedin-logo.png" alt=""></li>
+					<li><img src="/assets/img/icons/twitter.png" alt=""></li>
+					<li><img src="/assets/img/icons/whatsapp.png" alt=""></li>
+				</ul>
 			</footer>
 		</div>
 	</body>
