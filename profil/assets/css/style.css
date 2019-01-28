@@ -1,3 +1,4 @@
+html{scroll-behavior: smooth;}
 body{margin: 0px;
     padding: 0px;
     font-family: 'Varela Round', sans-serif;
@@ -9,6 +10,8 @@ body{margin: 0px;
     background-image: url(/assets/img/4k-wallpaper-dark.jpg);
     background-size: cover; 
 }
+abbr{    font-family: 'Varela Round', sans-serif;
+cursor: help;}
 cite{color: white;
     font-size: 23px;
     text-shadow: 1px 0 15px;
@@ -19,7 +22,7 @@ cite{color: white;
 .block .h1{color: white;
     text-align: center;
     font-size: 200px;
-    animation: text-flicker-in-glow 4s linear both;
+    animation: text-flicker-in-glow  4s linear both;    
     position: relative;
     left: 20px;
     top: 50px;
@@ -119,12 +122,12 @@ cite{color: white;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
     }
     75.1% {
-        opacity: 0;
+        opacity: 1;
         text-shadow: none;
     }
     77% {
-        opacity: 0;
-        text-shadow: none;
+        opacity: 1;
+        text-shadow: 0 18px;
     }
     77.1% {
         opacity: 1;
@@ -135,11 +138,11 @@ cite{color: white;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
     }
     85.1% {
-        opacity: 0;
+        opacity: 1;
         text-shadow: none;
     }
     86% {
-        opacity: 0;
+        opacity: 1;
         text-shadow: none;
     }
     86.1% {
@@ -151,8 +154,6 @@ cite{color: white;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
     }
 }
-
-
 @keyframes text-flicker-in-glow {
     0% {
         opacity: 0;
@@ -278,6 +279,10 @@ cite{color: white;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
     }
 }
+.life{animation: text-shadow-drop-center 4s infinite alternate;}
+@keyframes text-shadow-drop-center{
+    0%{text-shadow: 0 0 15px;}
+}
 .block li{list-style-type: none;
     display: inline;
 }
@@ -287,12 +292,24 @@ cite{color: white;
     font-size: 20px}
 .block li a:hover{text-shadow: 1px 0 35px;}
 
-.nav1{border-bottom: 1px solid white;
+.nav1{border-bottom:
     width: 630px;
     animation: bounce-in-left 1.1s both;
     position: relative;
     left: 350px;
-    top:20px}
+    top:20px;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;}
+.nav1 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;}
 @keyframes bounce-in-left {
     0% {
         -webkit-transform: translateX(-600px);
@@ -881,7 +898,8 @@ cite{color: white;
 address{position: relative;
     left: 50px;
     display: block;
-    bottom: 150px;
+    bottom: 100px;
     color: white;text-shadow: 1px 0 5px;
+    width: 150px;
 }
 .me{color: white;text-shadow: 1px 0 5px;
