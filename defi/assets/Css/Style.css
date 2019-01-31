@@ -1,1 +1,5 @@
-.barre ul li a  {text-decoration: none;}
+.barre li a {text-decoration: none;}
+.barre li{list-style-type: none;
+display: inline;}
+.nav-der{display: none;}
+.nav-der{display: none;}
