@@ -1,0 +1,298 @@
+
+
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	font-family: 'Prosto One', cursive;
+	font-size: 12px;
+	/*	background-image: url(images/417886_watercolor-paint-monotype-art-pattern-water-hd-wallpapers_1920x1200_h.jpg)*/
+}
+@import url(https://fonts.googleapis.com/css?family=Cabin:700);
+
+.circle-container {
+	position: relative;
+	perspective: 1000;	
+	margin: 0 auto;	
+	bottom: 100px;
+}
+
+.circle-container:hover .circle {
+	transform: rotate3d(45, 45, 0, 180deg);
+}
+
+.circle-container:hover .outer-ring {
+	transform: rotate3d(45, 0, 0, 180deg);
+}
+
+.circle-container:hover .outer-outer-ring {
+	transform: rotate3d(0, 45, 0, 180deg);
+}
+
+.circle-container, .front, .back {
+	width: 565px;
+	height: 575px;
+	background-color: rgba(0,0,0,0);
+}
+
+.circle, .outer-ring, .outer-outer-ring {
+	transition: 1.5s;
+	transform-style: preserve-3d;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.circle {
+	position: relative;
+	width: 575px;
+	height: 575px;
+}
+
+.front, .back {
+	border-radius:50%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	background-color: #fff;
+	z-index: 2;
+}
+abbr{color: black;
+	font-size: 20px;
+}
+.back a{
+	margin-top: 1em;
+	font-family: 'Merienda', cursive;
+	font-weight: 700;
+	font-size: 17px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 2px 0px 5px black;
+	position: relative;
+	left: 210px;
+}
+.back a:hover{color: aquamarine}
+.front p , .back p{
+	margin-top: 1em;
+	font-family: 'Merienda', cursive;
+	font-weight: 700;
+	font-size: 70px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 0 5px grey;}
+
+.back {
+	transform: rotate3d(45,45,0,180deg);
+	background-color: #fff;
+}
+.front p{
+	padding-top:0px;
+	font-size: 125px
+}	
+.front img{position: relative;
+	top: 200px;
+	left: 50px;
+}
+.back-logo {
+	width: 100%;
+	display: block;
+	margin: 1em auto;
+	border-radius: 50%;
+	height: 90%;
+}
+
+/*
+.outer-ring {
+position: absolute;
+top: px;
+left: -7px;
+border-radius: 50%;
+border: 2px solid #fff;
+width: 675px;
+height: 675px;
+background-color: rgba(255,255,255,0);
+box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+*/
+
+.outer-outer-ring {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 111px;
+	height: 111px;
+	background-color: rgba(255,255,255,0);
+	box-shadow: 0px 0px 20px #f57d21;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 200;
+	color: #222222;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+	padding: 0px;
+}
+
+p, ol {
+	line-height: 180%;
+}
+
+strong {
+}
+
+a {
+	color: #5C5539;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img.border {
+}
+
+img.alignleft {
+	float: left;
+	margin-right: 30px;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+hr {
+	display: none;
+}
+
+/** WRAPPER */
+
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+	height: 00px
+}
+
+
+/* Header */
+#header {
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 0px 0px;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 310px;
+	height: 150px;
+	font-family: 'Lemon', cursive;}
+
+#logo h1 {
+	padding: 50px 0px 0px 0px;
+	text-transform: lowercase;
+	letter-spacing: -2px;
+	font-size: 150px;
+	text-transform: uppercase
+}
+
+#logo h1 a {
+	text-decoration: none;
+	color:  white;
+	text-shadow: 1px 0 3px black;
+}
+
+#logo p {
+	margin-top: -10px;
+	color: #D5806F;
+}
+
+#logo p a {
+	color: #D5806F;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 810px;
+	height: 80px;
+	padding: 20px 40px 0px 0px;
+}
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 40px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	margin-left: 1px;
+	padding: 7px 20px 7px 20px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #FFFFFF;
+	border-radius: 20px;
+	transition: 1s;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+	background: #D5806F;
+	box-shadow: inset 0px 0px 10px 5px #000 
+		border-radius: 10px;
+	color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+	margin: 0 auto;
+	padding: 5px 0px ;
+	position: relative;
+	bottom: 100px;
+
+}
+
+#footer p {
+	font-size: 12px;
+	color:#D5806F;
+}
+
+#footer a {
+	color: #D5806F;
+}
