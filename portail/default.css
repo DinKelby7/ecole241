@@ -82,7 +82,7 @@ abbr{color: black;
 	font-size: 70px;
 	text-align: center;
 	color: #fff;
-	text-shadow: 2px 0 5px grey;}
+	text-shadow: 3px 1px 5px black;}
 
 .back {
 	transform: rotate3d(45,45,0,180deg);
