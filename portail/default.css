@@ -77,12 +77,11 @@ abbr{color: black;
 .back a:hover{color: aquamarine}
 .front p , .back p{
 	margin-top: 1em;
-	font-family: 'Merienda', cursive;
 	font-weight: 700;
 	font-size: 70px;
 	text-align: center;
 	color: #fff;
-	text-shadow: 3px 1px 5px black;}
+	text-shadow: 1px 1px 3px black;}
 
 .back {
 	transform: rotate3d(45,45,0,180deg);
@@ -297,3 +296,9 @@ hr {
 #footer a {
 	color: #D5806F;
 }
+.para{color: #FAA61A;
+  font-family: 'Righteous', cursive;}
+.para2{color: #FAA61A;
+  font-family: 'Righteous', cursive;}
+.para3{color: #FAA61A;
+  font-family: 'Righteous', cursive;}
