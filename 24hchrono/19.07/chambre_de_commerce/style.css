@@ -296,7 +296,7 @@ input:-webkit-autofill:focus {
 }
 /*Bread Crumbs */
 .breadcrumbs {
-	background: url('images/Lbv.jpg');
+	background: url('assets/images/Lbv.jpg');
 	background-position: 100%;
 	position: relative;
 	background-repeat: no-repeat;
@@ -3041,22 +3041,18 @@ input:-webkit-autofill:focus {
 	visibility: hidden;
 	left: 50%;
 	margin: -18px 0 0 -16px;
-/*
 	transform: scale(1.5);
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-*/
 	display:inline-block;
 }
 .blog-main .single-blog:hover .link {
 	opacity:1;
 	visibility:visible;
-/*
 	-webkit-transform:scale(1.0);
 	-moz-transform:scale(1.0);
 	transform:scale(1.0);
-*/
 }
 .blog-main .single-blog .link:hover{
 	-webkit-transform:rotate(45deg);
@@ -4760,7 +4756,6 @@ input:-webkit-autofill:focus {
 	height: 139px;
 }
 .hauteur{height: 500px;}
-
 /*=======================
   End Footer CSS
 =========================*/ 
