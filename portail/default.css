@@ -78,6 +78,9 @@ abbr{color: black;
     position: relative;
     left: 210px;
 }
+.back{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .back a:hover{color: aquamarine}
 .front p , .back p{
     margin-top: 1em;

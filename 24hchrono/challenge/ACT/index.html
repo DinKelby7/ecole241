@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+
+
+   <!-- Mirrored from technext.github.io/lawful/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Feb 2019 18:46:47 GMT -->
+   <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="img/favicon.png" type="image/png">
+      <title>Act Afrique</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="vendors/linericon/style.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+      <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+      <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+      <link rel="stylesheet" href="vendors/animate-css/animate.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <style>
+         #more {display: none;}
+         #slider {
+            height:100px;
+            width:100%;
+            margin:auto;
+            overflow:hidden;
+         }
+
+         .slide {
+            height:100px;
+            float:left;
+            text-align:center;
+            border:1 solid #000;
+            line-height:8em;
+            font-size:10px;
+
+         }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function () {
+            //you can set this, as long as it's not greater than the slides length
+            var show = 3;
+            var w = $('#slider').width() / show;
+            var l = $('.slide').length;
+
+            $('.slide').width(w);
+            $('#slide-container').width(w * l)
+
+            function slider() {
+               $('.slide:first-child').animate({
+                  marginLeft: -w
+               }, 'slow', function () {
+                  $(this).appendTo($(this).parent()).css({marginLeft: 0});
+               });
+            }
+            var timer = setInterval(slider, 2000);
+
+            $('#slider').hover(function(){
+               clearInterval(timer);
+            },function(){
+               timer = setInterval(slider, 2000);
+            });
+         });
+      </script>
+
+   </head>
+
+   <body>
+
+      <!--================ Start Header Menu Area =================-->
+      <header class="header_area" id="head">
+         <div class="main_menu">
+            <div class="search_input" id="search_input_box">
+               <div class="container">
+                  <form class="d-flex justify-content-between">
+                     <input type="text" class="form-control" id="search_input" placeholder="Recherchez ici">
+                     <button type="submit" class="btn"></button>
+                     <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                  </form>
+               </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <a class="navbar-brand logo_h" href="index-2.html"><img src="img/logo%20-%20Copy.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+
+                  <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                     <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#head">Accueil</a></li>
+                        <li class="nav-item submenu dropdown">
+                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                              aria-expanded="false">A propos</a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a class="nav-link" href="#about">Mot du DG</a></li>
+                              <li class="nav-item"><a class="nav-link" href="single-blog.html">Notre Entreprise</a></li>
+                              <li class="nav-item"><a class="nav-link" href="single-blog.html">Notre Vision</a></li>
+                              <li class="nav-item"><a class="nav-link" href="single-blog.html">Notre Valeurs</a></li>
+                              <li class="nav-item"><a class="nav-link" href="single-blog.html">L'equipe</a></li>
+                           </ul>
+                        </li>
+
+                        <li class="nav-item submenu dropdown">
+                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                              aria-expanded="false">Nos filiales</a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a class="nav-link" href="Conseil.html">ACT Afrique Capital & Conseil</a></li>
+                              <li class="nav-item"><a class="nav-link" href="elements.html">ACT Afrique Com</a></li>
+
+                           </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#carrieres">Carrieres</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="actualite.html">Actualites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#temoignages" >Temoignages</a></li>
+
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                     </ul>
+                     <!--
+<ul class="nav navbar-nav menu_nav ml-auto">
+<li class="nav-item active"><a class="nav-link" href="index-2.html">Accueil</a></li>
+<li class="nav-item active">A propos  <ul>
+<li>Mot du DG</li>
+<li>Notre Entreprise</li>
+<li>Notre Vision</li>
+<li>Nos Valeurs</li>
+<li>L'equipe</li>
+</ul> <a class="nav-link" href="index-2.html"></a></li>
+
+<li class="nav-item"><a class="nav-link" href="about-us.html">Nos filiales</a>
+<ul>
+<li>Capital & conseil</li>
+<li>Com</li>
+</ul></li>
+<li class="nav-item"><a class="nav-link" href="Service.html">Carrieres</a></li>
+
+<li class="nav-item"><a class="nav-link" href="contact.html">Temoignages</a></li>
+<li class="nav-item submenu dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+aria-expanded="false">Actualités</a>
+</li>
+
+<li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+</ul>
+-->
+                     <ul class="nav navbar-nav ml-auto">
+                        <div class="social-icons d-flex align-items-center">
+                           <a href="#">
+                              <li><i class="fa fa-facebook"></i></li>
+                           </a>
+                           <a href="#">
+                              <li><i class="fa fa-twitter"></i></li>
+                           </a>
+                           <a href="#">
+                              <li><i class="fa fa-youtube"></i></li>
+                           </a>
+                           <a href="#">
+                              <li><i class="fa fa-linkedin"></i></li>
+                           </a>
+                        </div>
+                        <li class="nav-item"><a href="#" class="search">
+                           <i class="lnr lnr-magnifier" id="search"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!--================ End Header Menu Area =================-->
+      <hr>
+      <!--================ Start Home Banner Area =================-->
+      <section class="home_banner_area overlay">
+         <div class="banner_inner">
+            <div class="container">
+               <div class="row fullscreen d-flex align-items-center justify-content-center">
+                  <div class="banner_content" style="font-family:" Raleway", sans-serif;">
+                     <h2 style="font-family:">
+                        A LA UNE<br>
+                        African Business health Forum 2019<br>
+                     </h2>
+                     <p>
+                        L'agence ACT Afrique Communication,filiale du groupe ACT Afrique Group,a fierement participe au Africa Business Health Forum(ABHF) 2019 a Addis-Abeba ce 12 fevrier en marge du 32e Sommet de l'Union Africaine
+                     </p>
+                     <a class="primary-btn text-uppercase" href="#">Lire Plus</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--================ End Home Banner Area =================-->
+
+      <div>
+      </div>
+
+      <!--================ Start Video Area =================-->
+      <section class="video-sec-area section_gap_top" id="about">
+         <h1 style="text-align: center">Bienvenue sur notre site</h1>
+         <br>
+         <br>
+         <br>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6" style="text-align: justify">
+                  <p>Il y a cinq ans, animés par notre passion pour l'Afrique, nous avons entrepris un voyage extraordinaire pour bâtir un cabinet de conseil panafricain de référence. Un cabinet à même de soutenir le développement  du continent  en offrant une haute qualité de services à des clients des secteurs publics et privés quel que soit leur domaine d'activité. <p> <strong>ACT</strong>  a été entièrement conçu par des africains bénéficiant à la fois de compétences de niveau international et d'une parfaite connaissance du continent, de ses défis  et des opportunités qu'il recèle.
+                  Depuis sa création, nous nous appuyons sur 4 valeurs fondamentales garantes de l'atteinte de nos objectifs et de notre performance: professionnalisme, responsabilité,  éthique et transparence.
+                  Aujourd'hui, nous sommes extrêmement fiers d'avoir collaboré, à travers l'ensemble du continent et même au-delà, avec  plus de 40 clients et partenaires: gouvernements, sociétés africaines, organisations multilatérales,  organisations à but non lucratif, fondations africaines et internationales.</p> <span id="dots">...</span><span id="more">
+                  <p>Tout au long de notre parcours nous n'avons pu que constater la diversité des besoins des organisations qui évoluent en Afrique en termes d'accompagnement et de support dans l'immobilisation des ressources, le conseil en stratégie, la communication transformative, la conduite du changement et tant d'autres domaines d'expertise.</p> Afin de mieux répondre à cette demande croissante et aux enjeux de plus en plus complexes de nos clients, nous avons décidé d'évoluer vers une nouvelle organisation. J'aurai l'honneur de diriger désormais ACT Afrique Group qui s'articule autour de deux structures: <strong>ACT Afrique Capital et Conseil</strong>  et <strong>ACT Afrique Com.</strong> 
+
+                  <strong> ACT Afrique Capital et Conseil</strong> nous aidera à développer nos chantiers dans les domaines du capital et du conseil.
+
+                  <strong> ACT Afrique Com</strong> pour répondre à une forte demande  en coaching, facilitation, branding et accompagnement stratégique de nos Etats.
+
+                  Cette réorganisation a été rendue possible grâce à un groupe dynamique de professionnels africains partageant nos valeurs, engagés dans l'atteinte de résultats tangibles et qui travaillent à ce que nous maintenions notre position d'acteur majeur dans l'apport de solutions innovantes et durables pour l'Afrique.
+
+                  Enfin, notre site a également évolué afin de refléter davantage notre passion, notre vision et notre ambition pour l'Afrique.  Il est aussi l'occasion de partager avec vous nos réalisations et réaffirmer notre volonté de marquer notre différence.</span></p>
+
+               <button onclick="myFunction()" id="myBtn" class="genric-btn info-border circle arrow">Lire Plus</button>
+
+               <script>
+                  function myFunction() {
+                     var dots = document.getElementById("dots");
+                     var moreText = document.getElementById("more");
+                     var btnText = document.getElementById("myBtn");
+
+                     if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                     } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Lire moins"; 
+                        moreText.style.display = "inline";
+                     }
+                  }
+               </script>
+               <!--
+<p>
+Il y a cinq ans, animés par notre passion pour l'Afrique, nous avons entrepris un voyage extraordinaire pour bâtir un cabinet de conseil panafricain de référence. Un cabinet à même de soutenir le développement  du continent  en offrant une haute qualité de services à des clients des secteurs publics et privés quel que soit leur domaine d'activité.
+
+ACT a été entièrement conçu par des africains bénéficiant à la fois de compétences de niveau international et d'une parfaite connaissance du continent, de ses défis  et des opportunités qu'il recèle.
+Depuis sa création, nous nous appuyons sur 4 valeurs fondamentales garantes de l'atteinte de nos objectifs et de notre performance: professionnalisme, responsabilité,  éthique et transparence.
+Aujourd'hui, nous sommes extrêmement fiers d'avoir collaboré, à travers l'ensemble du continent et même au-delà, avec  plus de 40 clients et partenaires: gouvernements, sociétés africaines, organisations multilatérales,  organisations à but non lucratif, fondations africaines et internationales.
+Tout au long de notre parcours nous n'avons pu que constater la diversité des besoins des organisations qui évoluent en Afrique en termes d'accompagnement et de support dans l'immobilisation des ressources, le conseil en stratégie, la communication transformative, la conduite du changement et tant d'autres domaines d'expertise.
+</p> 
+-->
+            </div>
+            <div class="col-lg-6 video-right">
+               <img src="img/slider/cheihck.jpg" alt="" style="padding-bottom:5px; position: relative;bottom: 100px;">
+               <i>Ibrahima Cheikh Diong <br>
+                  Fondateur & PDG</i>
+            </div>
+         </div>
+
+      </section>
+      <!-- about -->
+      <section class="sample-text-area" style="display: flex; border-right:1px solid white; text-align: justify ">
+         <div class="container texte1 " style="background-color: #44688C;">
+            <h1 class="text-heading title_color" style="padding: 10px;text-align: center; color: white;">Notre Vision</h1>
+            <p class="sample-text"  style="color: white;">
+               ACT est convaincu que l’Afrique pourra parvenir à un développement durable à condition de prendre son destin en main avec confiance, grâce à un travail acharné et en faisant appel à des ressources humaines de qualité.</p> 
+
+            <p  style="color: white;">A nos yeux, cette croissance économique et sociale profitable à l’Afrique ne sera possible qu’à travers le respect de valeurs fondamentales comme la responsabilité, le professionnalisme, le dévouement et un engagement profond.ACT estime que, face aux nombreux défis auxquels l’Afrique est confrontée, son avenir dépend de sa capacité à identifier, élaborer et renforcer ses opportunités de partenariats mutuellement gagnants et de coopération.
+            </p>
+         </div>
+
+         <div class="container texte1" style="background-color: #44688C;">
+            <h1 class="text-heading title_color" style="padding: 10px;text-align: center; color: white;">Nos Valeurs</h1>
+            <p class="sample-text" style="color: white;">
+               Dans un monde en perpétuel mouvement, qui ne peut s’affranchir des principes de bonne gouvernance et d’éthique, ACT s’astreint au respect de valeurs rigoureuses dans l’exécution de ses missions et la conduite de ses relations avec ses partenaires.
+
+               L’esprit  de ACT, c’est être PRET.
+            </p>
+            <ul  style="color: white;">
+               <li>Responsabilité:</li>
+               <li>Ethique:</li>
+               <li>Transparence:</li>
+            </ul>
+
+            <!--
+<li>
+
+<h4> Responsabilité:</h4>
+<p>ACT se porte garant de la bonne exécution des transactions et missions qui lui sont confiées et du respect de ses propres devoirs et obligations.
+</p>
+</li>
+<li>
+
+<h4>Ethique:</h4>
+<p> ACT s’engage au respect absolu des principes déontologiques et éthiques qui régissent les activités de conseil et d’intermédiation.</p> 
+</li>
+<li>
+
+<h4>Transparence:</h4>
+<p> Dans la conduite des transactions et autres missions qui lui sont confiées, ACT s’engage à partager en toute transparence les informations en sa possession avec ses partenaires et ses clients.</p>
+</li>
+</ul>
+-->
+
+         </div>
+         <br>
+      </section>
+
+      <!-- end about -->
+      <!--================ End video Area =================-->
+
+
+      <!--================ Start service-2 Area =================-->
+      <section class="service-area-2" id="carrieres"> 
+         <div class="container">
+            <div style="text-align: center;">
+               <h1>Carrière </h1>
+               <p class="df-color">Envie d'une carrière à l’image de vos aspirations.?</p>
+            </div>
+            <div class="row align-items-center justify-content-center">
+               <div class="col-lg-6">
+                  <div class="service-2-left">
+                     <div class="get-know">
+
+                        <h2>Venez travailler chez <strong>ACT</strong></h2>
+                        <p>Travailler chez ACT, c’est faire partie d’une équipe performante. ACT est composé de personnes qui croient en l’excellence, au succès et ont la volonté de mettre en œuvre la discipline requise pour réussir. </p>
+                     </div>
+                     <div class="author-lacture">
+                        <p>Nous mettons en valeur notre équipe à qui nous fournissons un environnement sans stress et sans pression, propice à la créativité. Nous sommes en effet des professionnels axés sur l’efficacité et la performance. Il est important de veiller à ce que nos clients soient satisfaits et servis avec le soin et le respect qu’ils méritent.</p>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="service-2-right">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                           <div class="left-image">
+                              <div class="s-img"><img class="img-fluid" src="img/slider/car3.jpg" alt=""></div>
+                              <div class="s-img"><img class="img-fluid" src="img/slider/car6.jpg" alt=""></div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                           <div class="right-image">
+                              <div class="s-img"><img class="img-fluid" src="img/slider/car2.png" alt=""></div>
+                              <div class="s-img"><img class="img-fluid" src="img/slider/car5.jpg" alt=""></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <div >
+
+      </div>
+
+      <!--================ Start Blog Area =================-->
+      <section class="section_gap blog_area" id="actu">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-7">
+                  <div class="main_title">
+                     <h2>Actualites</h2>
+                     <p>Suivez toute notre actualité.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <!-- single-blog -->
+               <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="single-blog">
+                     <div class="blog-thumb">
+                        <img class="img-fluid" src="img/slider/actu1.png" alt="">
+                     </div>
+                     <div class="blog-details">
+                        
+                        <h5><a href="#">Addiction When Gambling <br>
+                           Becomes A Problem</a></h5>
+                        <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
+                           front of their desktops.</p>
+                        <a href="#" class="genric-btn circle arrow" style="background-color: #44688C; color white">Lire Plus<span class="lnr lnr-arrow-right"></span></a>
+
+                     </div>
+                  </div>
+               </div>
+               <!-- single-blog -->
+               <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="single-blog">
+                     <div class="blog-thumb">
+                        <img class="img-fluid" src="img/slider/actu2.png" alt="">
+                     </div>
+                     <div class="blog-details">
+                       
+                        <h5><a href="#">Addiction When Gambling <br>
+                           Becomes A Problem</a></h5>
+                        <p>
+                           L’atelier d’expert: espace de débat et de vitalité sur le devenir de l’Afrique !</p>
+                        <br>
+                        <br>
+                        <a href="#" class="genric-btn  circle arrow" style="background-color: #44688C;">Lire Plus<span class="lnr lnr-arrow-right"></span></a>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+               <!-- single-blog -->
+               <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="single-blog">
+                     <div class="blog-thumb">
+                        <img class="img-fluid" src="img/slider/actu3.jpg" alt="">
+                     </div>
+                     <div class="blog-details">
+                        
+                        <h5><a href="#">Conférence de la BADEA sur la participation du secteur privé au développement de l’Afrique</a></h5>
+                        <p>La Banque Arabe pour le Développement Economique en Afrique (BADEA), a tenu, ce Lundi 18 Septembre 2017 au sein de son siège à Khartoum....</p>
+                        <a href="#" class="genric-btn circle arrow" style="background-color: #44688C;">Lire Plus<span class="lnr lnr-arrow-right"></span></a>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--================ End Blog Area =================-->
+
+      <!--================ End service-2 Area =================-->
+      <div style="text-align: center" id="temoignages">
+         <h1>Temoignages</h1>
+      </div>
+      <div style="display: flex">
+         <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+               <aside class="single_sidebar_widget author_widget">
+                  <img class="author_img rounded-circle" src="img/slider/tem3.png" alt="">
+                  <h4>Rahel KASSAHUN</h4>
+                  <p>Fondatrice  Africa Unbound</p>
+
+                  <p style="padding-bottom: 5px;">Nous, Africa Unbound, accordons une très grande valeur à notre partenariat avec Africa Consulting & Trading (ACT) car nous croyons que ACT est une entité créée par des professionnels aussi investis à contribuer au développement de l’Afrique que nous le sommes.  </p>
+                  <a href="#" class="genric-btn circle arrow" style="background-color: #44688C; color white">Lire Plus<span class="lnr lnr-arrow-right"></span></a>
+
+                  <div class="br"></div>
+               </aside>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+               <aside class="single_sidebar_widget author_widget">
+                  <img class="author_img rounded-circle" src="img/slider/tem2.png" alt="">
+                  <h4>Didier ACOUETEY</h4>
+                  <p>PDG  AfricSearch</p>
+
+                  <p>Considérée comme la dernière zone de croissance mondiale, l’Afrique aborde une transition économique dans son histoire récente qui marquera un renouveau politique et social sur le continent. Cette transition sera réussie si les questions de ... </p>
+                  <a href="#" class="genric-btn circle arrow" style="background-color: #44688C; color white">Lire Plus<span class="lnr lnr-arrow-right"></span></a>
+
+                  <div class="br"></div>
+               </aside>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+               <aside class="single_sidebar_widget author_widget">
+                  <img class="author_img rounded-circle" src="img/slider/tem1.png" alt="">
+                  <h4>Paulo GOMES</h4>
+                  <p>PDG Constelor Holdings</p>
+
+                  <p>ACT est la réalisation d’un projet couvé depuis longtemps par ses promoteurs. Nous partageons la même vision d’une Afrique volontaire et dynamique. C’est dans ce contexte que le partenariat entre ACT et Constelor s’inscrit: faire avancer le continent et l’ériger au niveau .</p>
+                  <div class="br"></div>
+                  <br>
+               </aside>
+            </div>
+         </div>
+      </div>
+      <div>
+         <br>
+         <br>
+
+         <div id="slider">
+            <div id="slide-container">
+               <div class="slide" style="background-image: url(img/slider/part1.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part2.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part3.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part5.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part6.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part7.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part8.png); background-repeat: no-repeat;background-size: contain"></div>
+               <div class="slide" style="background-image: url(img/slider/part9.png); background-repeat: no-repeat;background-size: contain"></div>
+
+            </div>
+         </div>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+
+         <!--================  start footer Area =================-->
+         <footer class="footer-area">
+            <div class="footer_top section_gap_top">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-5 col-md-8 col-sm-8">
+                        <div class="single-footer-widget">
+                           <h5 class="footer_title">ACT Afrique</h5>
+                           <p>Immeuble NA 12, 2ème étage Avenue Birago DIOP x Rue H Point E, Dakar</p>
+                           <ul class="list">
+                              <li><a href="#">Téléphone:</a>+221 33 867 95 98</li>
+                              <li><a href="#">Fax:</a>+221 33 867 95 90</li>
+                              <li><a href="#">Email:</a>contact@act-afrique.com</li>
+                              <li><a href="#">Actualités</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                           <h5 class="footer_title">Liens Utiles</h5>
+                           <div class="row">
+                              <div class="col-12">
+                                 <ul class="list">
+                                    <li><a href="#">Accueil</a></li>
+                                    <li><a href="#">A propos</a></li>
+                                    <li><a href="#">Nos Filiales</a></li>
+                                    <li><a href="#">Actualités</a></li>
+                                 </ul>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-5 col-md-8 col-sm-8">
+                        <div class="single-footer-widget">
+                           <h5>Newsletter</h5>
+                           <p>Recevez nos actualités les plus importantes </p>
+                           <div class="footer-newsletter" id="mc_embed_signup">	
+                              <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                    method="get" class="form-inline">
+                                 <div class="d-flex flex-row">
+                                    <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                           required="" type="email">
+                                    <button class="click-btn btn btn-default"><span class="lnr lnr-location" aria-hidden="true"></span></button>
+                                    <div style="position: absolute; left: -5000px;">
+                                       <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                    </div>
+                                 </div>
+                                 <div class="info"></div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-12">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                           Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ecole 241 <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Survivor</a>
+                           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                     </div>
+                     <div class="col-lg-6 col-md-12 text-right">
+                        <div class="social-icons">
+                           <a href="#"><i class="fa fa-facebook"></i></a>
+                           <a href="#"><i class="fa fa-twitter"></i></a>
+                           <a href="#"><i class="fa fa-youtube"></i></a>
+                           <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!--================ End footer Area =================-->
+
+
+         <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="js/jquery-3.2.1.min.js"></script>
+         <script src="js/popper.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/stellar.js"></script>
+         <script src="js/jquery.magnific-popup.min.js"></script>
+         <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+         <script src="js/jquery.ajaxchimp.min.js"></script>
+         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+         <script src="vendors/counter-up/jquery.counterup.js"></script>
+         <script src="js/mail-script.js"></script>
+         <!--gmaps Js-->
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+         <script src="js/gmaps.min.js"></script>
+         <script src="js/theme.js"></script>
+         </body>
+
+
+      <!-- Mirrored from technext.github.io/lawful/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Feb 2019 18:47:08 GMT -->
+      </html>
