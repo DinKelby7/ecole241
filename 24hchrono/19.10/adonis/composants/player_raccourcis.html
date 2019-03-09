@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="style3.css">
+    </head>
+
+    <body>
+        <div class='music-card playing'>
+
+           <a href="/demo-04/bloc_profil.html"> <div class='image'></div></a>
+
+            <div class='wave'></div>
+            <div class='wave'></div>
+            <div class='wave'></div>
+
+            <div class='info'>
+           <h2 class='title'>Chilla one</h2>
+                <div class='artist'>Porté par les anges</div>
+            </div>
+
+            <i class="fa fa-pause trigger" aria-hidden="true"></i>
+            <i class="fa fa-play trigger" aria-hidden="true"></i>
+        </div>
+
+        <script>
+            var audio = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/Lecrae_-_Anomaly_(Lyric_Video).mp3');
+            audio.volume = 0.1;
+            audio.play();
+
+            $('.trigger').click(function() {
+                if (audio.paused == false) {
+                    audio.pause();
+                    $('.fa-play').show();
+                    $('.fa-pause').hide();
+                    $('.music-card').removeClass('playing');
+                } else {
+                    audio.play();
+                    $('.fa-pause').show();
+                    $('.fa-play').hide();
+                    $('.music-card').addClass('playing');
+                }
+            });
+        </script>
+    </body>
+</html>
