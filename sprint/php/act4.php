@@ -20,6 +20,7 @@
             9 => array('nom' => 'Git', 'prenom' => 'Francois', 'age' => '21','profil' => 'bernyfrancois.github.io/ecole241/profil/'),
             10 => array('nom' => 'Kog', 'prenom' => 'Darel', 'age' => '20','profil' =>'darel14.github.io/ecole241/profil/')
         );
+        var_dump($okacode);
         ?> 
     </body>
 </html>
