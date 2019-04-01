@@ -84,9 +84,9 @@ $okacode = array(
                 </tr>
             </thead>
             <tbody>
-                <?php for($i = 0;$i < count($okacode); $i++): ?>
+                <?php for($i = 1;$i == count($okacode); $i++): ?>
                 <tr>
-                    <td><?= $i+1 ?></td>
+                    <td><?= $i ?></td>
                     <td><?= $okacode[$i]['prenom']?></td>
                     <td><?= $okacode[$i]['nom'] ?></td>
                     <td><?= $okacode[$i]['age'] ?> ans</td>
