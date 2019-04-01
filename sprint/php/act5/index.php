@@ -1,3 +1,6 @@
+<?php 
+include('data.php')
+?>
 <!doctype html>
 
 <html>
@@ -17,9 +20,29 @@
 	</head>
 
 	<body>
-		<h1>Tableau des apprenants</h1>
-		<?php
-		include('data.php')
-		?>
+	<h1>Tableau des apprenants</h1>
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Nom</th>
+					<th scope="col">Prenom</th>
+					<th scope="col">Age</th>
+					<th scope="col">Profil</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<?php for($i = 1;$i < count($okacode); $i++): ?>
+				<tr>
+					<td><?= $i ?></td>
+					<td><?= $okacode[$i]['prenom']?></td>
+					<td><?= $okacode[$i]['nom'] ?></td>
+					<td><?= $okacode[$i]['age'] ?> ans</td>
+					<td><a href="<?= $okacode[$i]['profil'] ?>" target="_blank" class="btn btn-primary">Consulter</a></td>
+				</tr>
+				<?php endfor; ?>
+			</tbody>
+		</table> 
 	</body>
 </html>
