@@ -33,7 +33,7 @@ include('data.php')
 				</tr>
 			</thead>
 			<tbody>
-				<?php for($i = 1;$i < count($okacode); $i++): ?>
+				<?php for($i = 1;$i <= count($okacode); $i++): ?>
 				<tr>
 					<td><?= $i ?></td>
 					<td><?= $okacode[$i]['prenom']?></td>
