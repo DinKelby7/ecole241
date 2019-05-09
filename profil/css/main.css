@@ -1633,6 +1633,7 @@ footer p span {
   background-image: url(../img/fleur%20de%20mur.jpg);
   background-size: contain;
   border-radius: 5px;
+  background-repeat: no-repeat;
 }
 
 .screen:after {
@@ -2232,7 +2233,6 @@ footer p span {
   z-index: 2;
   top: 20px;
   left: 10px;
-  overflow-x: hidden;
   padding: 20px 0;
   visibility: hidden;
 
