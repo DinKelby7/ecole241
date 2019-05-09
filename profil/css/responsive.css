@@ -188,7 +188,9 @@
     background-repeat: no-repeat;
   }
   body{
-    padding-left: 50px;
+    padding-left: 35px;
+    overflow: hidden;
+    
   }
   .mots{
     padding-bottom:50px;
@@ -274,7 +276,8 @@
     background-repeat: no-repeat;
   }
   body{
-    padding-left: 50px;
+    padding-left: 35px;
+    overflow: hidden
   }
   .mots{
     padding-bottom:50px;
@@ -382,9 +385,11 @@
     width: 300px;
   }
   body{
-    padding-left: 50px;
+    padding-left: 35px;
+    overflow: hidden
   }
   .mots{
     padding-bottom:50px;
   }
+
 }
