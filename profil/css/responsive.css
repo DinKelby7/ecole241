@@ -187,6 +187,12 @@
   .landing_content{
     background-repeat: no-repeat;
   }
+  body{
+    padding-left: 50px;
+  }
+  .mots{
+    padding-bottom:50px;
+  }
 }
 
 /* Small devices (mobile, 575px and down) */
@@ -266,6 +272,12 @@
   }
   .landing_content{
     background-repeat: no-repeat;
+  }
+  body{
+    padding-left: 50px;
+  }
+  .mots{
+    padding-bottom:50px;
   }
 }
 
@@ -368,5 +380,11 @@
   }
   .modal-window > div{
     width: 300px;
+  }
+  body{
+    padding-left: 50px;
+  }
+  .mots{
+    padding-bottom:50px;
   }
 }
