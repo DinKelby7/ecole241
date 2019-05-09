@@ -18,6 +18,7 @@ body {
   line-height: 170%;
   background-color: #030303;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .layout-fixed {
