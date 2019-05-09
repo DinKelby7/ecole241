@@ -366,4 +366,7 @@
   .landing_content{
     background-repeat: no-repeat;
   }
+  .modal-window > div{
+    width: 300px;
+  }
 }
