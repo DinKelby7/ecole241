@@ -9,12 +9,21 @@
   .font{
     font-size: 60px;
   }
+  #mySidebar,#main{
+    display: none;
+  }
+  
 }
 
 @media (max-width: 1199px) {
   .container {
     max-width: 100%;
   }
+  .menu{
+
+    display: none;
+  }
+  
 }
 
 /* Large devices (desktops, 991px and down) */
@@ -28,6 +37,7 @@
     display: inline-block;
     cursor: pointer;
   }
+  
   .menu_items {
     text-align: center;
     position: fixed;
@@ -120,6 +130,9 @@
   .landing_content{
     background-repeat: no-repeat;
   }
+  .menu{
+    visibility: hidden;
+  }
 }
 
 /* Medium devices (tablets, 768px and down) */
@@ -165,13 +178,11 @@
   .about {
     padding: 0 30px;
   }
-  .nav1{
-    visibility: visible;
 
-  }
   .icon-bar{
     display: none;
   }
+
   .number{
     display: none;
   }
@@ -187,12 +198,23 @@
   .landing_content{
     background-repeat: no-repeat;
   }
-  body{
-    padding-left: 45px;
-    
-  }
+
   .mots{
     padding-bottom:50px;
+  }
+  .noms_job{
+    width: 100%;
+    height: 500px;
+  }
+  .noms_job p,h1{
+    transform: translateX(25%);
+  }
+  .noms_job h1{
+    font-size: 110px;
+    transform: translateX(10%);
+  }
+  .noms_job p{
+    font-size: 15px;
   }
 }
 
@@ -252,10 +274,7 @@
     display: block;
     margin-bottom: 5px;
   }
-  .nav1{
-    visibility: visible;
 
-  }
   .icon-bar{
     display: none;
   }
@@ -274,11 +293,23 @@
   .landing_content{
     background-repeat: no-repeat;
   }
-  body{
-    padding-left: 45px;
-  }
+
   .mots{
     padding-bottom:50px;
+  }
+  .noms_job{
+    width: 100%;
+    height: 500px;
+  }
+  .noms_job p,h1{
+    transform: translateX(25%);
+  }
+  .noms_job h1{
+    font-size: 90px;
+    transform: translateX(10%);
+  }
+  .noms_job p{
+    font-size: 15px;
   }
 }
 
@@ -357,10 +388,7 @@
   .about_info h4 {
     font-size: 20px;
   }
-  .nav1{
-    visibility: visible;
 
-  }
   .icon-bar{
     display: none;
   }
@@ -382,11 +410,22 @@
   .modal-window > div{
     width: 300px;
   }
-  body{
-    padding-left: 45px;
-  }
+
   .mots{
     padding-bottom:50px;
   }
-
+  .noms_job{
+    width: 100%;
+    height: 500px;
+  }
+  .noms_job p,h1{
+    transform: translateX(25%);
+  }
+  .noms_job h1{
+    font-size: 70px;
+    transform: translateX(10%);
+  }
+  .noms_job p{
+    font-size: 13px;
+  }
 }

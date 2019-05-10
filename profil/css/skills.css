@@ -1,0 +1,71 @@
+.competence {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:800px;
+    background:white;
+    height:25px;
+    border-radius:10px;
+    transition:0.4s linear;
+    transition-property:width, background-color;
+    left: -150px;
+}
+.competence_title{
+    margin-right: 130px;
+}
+.competence-title {
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:bold;
+    font-size:11px;
+    color:#fff;
+    background:transparent;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.competence-title span {
+    display:block;
+    background:transparent;
+    padding:0 20px;
+    height:24px;
+    line-height:23px;
+
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.competence-bar {
+    height:25px;
+    width:0px;
+    background:#000;
+    border-radius:10px;
+    float: left;
+    border: 1px solid #fff;
+}
+
+.containers {
+    min-height: 100%;
+    height: 100vh;
+
+
+}
+.skill-bar-percent {
+    position:absolute;
+    left:50%;
+    top:0;
+    font-size:15px;
+    height:35px;
+    line-height:25px;
+    color: grey;
+    font-weight: bolder;
+}
+@media (max-width: 991px){
+    .competence{
+        width: 100%;
+        left: 5px;
+    }
+}

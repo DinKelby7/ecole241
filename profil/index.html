@@ -18,26 +18,38 @@
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
 
   <body id="top" data-spy="scroll" data-target="#menu_items">
-
-
     <div id="preloader">
       <div class="scroll-static"></div>
     </div>
-    <div class="nav1 ">
-      <nav>
-        <ul>
-          <li><a href="#partie-1"><img src="img/icons/homepage.png" alt=""></a></li>
-          <li><a href="#partie-2"><abbr title="A propos"><img src="img/icons/me.png" alt=""></abbr></a></li>
-          <li><a href="#partie-3"><abbr title="Mes competences"><img src="img/icons/skills.png" alt="competences"></abbr></a></li>
-          <li><a href="#partie-4"><abbr title="Mes services"><img src="img/icons/working-with-laptop.png" alt=""></abbr></a></li>
-          <li><a href="#partie-5"><abbr title="Mes realisations"><img src="img/icons/innovation.png" alt=""></abbr></a></li>
-          <li><a href="#partie-6"><abbr title="Contactez-moi"><img src="img/icons/businessman-card-with-contact-email.png" alt=""></abbr></a></li>
-        </ul>
-      </nav>
+    <div class="menu_mobile">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#partie-1" class="mysidebar_item">Acceuil</a> 
+        <a href="#partie-2" class="mysidebar_item">A propos</a> 
+        <a href="#partie-3" class="mysidebar_item">Skills</a> 
+        <a href="#partie-4" class="mysidebar_item">Services</a>
+        <a href="#partie-5" class="mysidebar_item">Projets</a> 
+        <a href="#partie-6" class="mysidebar_item">Contact</a> 
+      </div>
+
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">
+          <nav class="menu_burger">
+            <span class="menu-trigger">
+              <i class="menu-trigger-bar top"></i>
+              <i class="menu-trigger-bar middle"></i>
+              <i class="menu-trigger-bar bottom"></i>
+            </span>
+          </nav>
+        </button>  
+
+      </div>
     </div>
     <div class="icon-bar">
       <a href="#partie-1" class="facebook">Acceuil</a> 
@@ -54,11 +66,19 @@
       <div class="landing_content">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-11">
-              <p class="life mots">Bonjour ! Je suis ....</p>
-              <span class="name life mots">DIN KELBY</span>
-              <p class="life name_job mot">UI/UX Designer,Developpeur web</p>
+            <div class="noms_job life">
+              <p>Bienvenue je suis ...</p>
+              <h1>DIN KELBY</h1>
+              <p>UI/UX Designer ,Developpeur front-end</p>
             </div>
+
+            <!--
+<div class="col-11">
+<p class="life mots">Bonjour ! Je suis ....</p>
+<span class="name life mots">DIN KELBY</span>
+<p class="life name_job mot">UI/UX Designer,Developpeur web</p>
+</div>
+-->
           </div>
         </div>
       </div>
@@ -68,11 +88,13 @@
     <div class="container">
       <div class="row">
         <div class="col">
+
           <div id="about" class="about_wrapper">
             <div class="about">
               <div id="partie-2" class="part"></div>
               <div class="row justify-content-center align-items-center">
                 <div class="col-lg-4 col-md-5">
+                
                   <div class="about_img">
                     <img class="about_img_1 top" src="img/profil.jpg" alt="">
                   </div>
@@ -101,87 +123,104 @@
                       <li><a href="#"><span class="ion-social-twitter"></span></a></li>
                       <li><a href="#"><span class="ion-social-instagram-outline"></span></a></li>
                       <li><a href="#"><span class="ion-social-linkedin"></span></a></li>
-<!--                      <li><a href="#"><span class="ion-social-facebook"></span></a></li>-->
-<!--                      <li><a href="#"><span class="ion-social-dribbble-outline"></span></a></li>-->
+                      <!--                      <li><a href="#"><span class="ion-social-facebook"></span></a></li>-->
+                      <!--                      <li><a href="#"><span class="ion-social-dribbble-outline"></span></a></li>-->
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div id="partie-3" class="part"></div>
 
-          <div class="col-lg-4 col-md-5">
+          <div id="about" class="about_wrapper">
+            <div class="about">
+              <div class="row justify-content-center align-items-center">
+                <div id="competences" class="col-md-5 col-centered">
+                  <h1 class="competence_title life">Mes competences</h1>
+                  <br>
+                  <div class="competence clearfix " data-percent="90%">
+                    <div class="competence-title"><span>HTML5</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">90%</div>
+                  </div>
 
-            <div class="col">
-              <!--					barre de progressions-->
-              <h1 class="life">Mes compétences </h1>
+                  <div class="competence clearfix " data-percent="75%">
+                    <div class="competence-title"><span>CSS3</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                  </div>
 
-              <div class="skills_container">
-                <div class="progress-bar-container">
-                  <li>
-                    <h3>HTML5</h3><span class="bar"><span class="html"></span></span><span class="number">90%</span>
-                  </li>
-                  <li>
-                    <h3>CSS3</h3><span class="bar"><span class="css3"></span></span><span class="number">65%</span>
-                  </li>
-                  <li>
-                    <h3>JAVASCRIPT</h3><span class="bar"><span class="js"></span></span><span class="number">35%</span>
-                  </li>
-                  <li>
-                    <h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span><span class="number">55%</span>
-                  </li>
-                  <li>
-                    <h3>PHP</h3><span class="bar"><span class="php"></span></span><span class="number">40%</span>
-                  </li>
-                  <li>
-                    <h3>WORDPRESS</h3><span class="bar"><span class="wp"></span></span><span class="number">75%</span>
-                  </li>
-                  <li>
-                    <h3>BOOSTRAP</h3><span class="bar"><span class="css3"></span></span><span class="number">65%</span>
-                  </li>
+                  <div class="competence clearfix" data-percent="35%" style="color:white";>
+                    <div class="competence-title"><span>JAVASCRIPT</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">35%</div>
+                  </div>
+
+                  <div class="competence clearfix" data-percent="45%">
+                    <div class="competence-title"><span>JQUERY</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">45%</div>
+                  </div>
+
+                  <div class="competence clearfix" data-percent="30%">
+                    <div class="competence-title"><span>PHP</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">30%</div>
+                  </div>
+
+                  <div class="competence clearfix" data-percent="91%">
+                    <div class="competence-title"><span>WORDPRESS</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">91%</div>
+                  </div>
+
+                  <div class="competence clearfix" data-percent="60%">
+                    <div class="competence-title"><span>BOOSTRAP</span></div>
+                    <div class="competence-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                  </div>
                 </div>
+
               </div>
             </div>
-
           </div>
+
           <div id="partie-4" class="part"></div>
 
           <div class="block3 row justify-content-center align-items-center">
-            <h1 class="lifes">Mes services</h1>
-            <div class="containera">
+            <div class="container_cards">
               <div class="card">
-                <div class="face face1">
-                  <div class="contente">
-                    <img src="img/design.jpg" alt="">
-                  </div>
+                <h3 class="title life">Developpement Web</h3>
+                <div class="bar_cards">
+                  <div class="emptybar_cards"></div>
+                  <div class="filledbar_cards"></div>
                 </div>
-                <div class="face face2">
-                  <p>Creation de site web de qualité de tout genre(administratif,E-commerce)</p>
+                <div class="description">
+                  <p>Creation de site web de qualité de tout genre(administratif,E-commerce).</p>
                 </div>
               </div>
-
               <div class="card">
-                <div class="face face1">
-                  <div class="contente">
-                    <img src="img/ux-ui.jpg" alt="">
-                  </div>
+                <h3 class="title life">UI/UX Design</h3>
+                <div class="bar_cards">
+                  <div class="emptybar_cards"></div>
+                  <div class="filledbar_cards"></div>
                 </div>
-                <div class="face face2">
-                  <p>conception d'interfaces accessible et facile à prendre en main
+                <div class="description">
+                  <p>Conception d'interfaces accessible et facile à prendre en main
                     pour tout type de support ainsi que des maquettes graphiques
                     correspondant aux souhaits de son client et de l'identité visuelle.</p>
                 </div>
               </div>
-
               <div class="card">
-                <div class="face face1">
-                  <div class="contente">
-                    <img src="img/secret-of-mobile-apps.jpg" alt="">
-                  </div>
+                <h3 class="title life">Developpement Mobile</h3>
+                <div class="bar_cards">
+                  <div class="emptybar_cards"></div>
+                  <div class="filledbar_cards"></div>
                 </div>
-                <div class="face face2">
-                  <p>Creation d'applications mobile Android, IOS et Windows</p>
+                <div class="description">
+                  <p>Creation d'applications mobile Android, IOS et Windows.</p>
                 </div>
               </div>
             </div>
@@ -193,7 +232,7 @@
               <div  class="part"></div>
               <div class="col-md-8">
                 <div class="text-center">
-                  <h2 class="section_title" id="partie-5">Mes realisations</h2>
+                  <h2 class="section_title life" id="partie-5">Mes realisations</h2>
                 </div>
                 <div class="owl-carousel testimonial_slider">
                   <div>
@@ -237,12 +276,12 @@
 
                 <div class="screen-body">
                   <div class="screen-body-item left">
-                    <div class="app-title">
+                    <div class="app-title life">
                       <span>CONTACTEZ</span>
                       <span>MOI</span>
                     </div>
-                    <div class="app-contact">CONTACT: +241 02 19 85 89</div>
-                    <div class="app-contact">
+                    <div class="app-contact life">CONTACT: +241 02 19 85 89</div>
+                    <div class="app-contact life">
                       arkhansky7@gmail.com
                     </div>
 
@@ -276,7 +315,7 @@
               <li><a href="#"><span class="ion-social-linkedin"></span></a></li>
               <li><a href="#"><span class="ion-social-whatsapp"></span></a></li>
             </ul>
-            <p class="copyright">&copy; 2019 <span>Din KELBY</span>.</p>
+            <p class="copyright life">&copy; 2019 <span>Din KELBY</span>.</p>
           </footer>
 
         </div>
@@ -286,5 +325,32 @@
     <script src="js/ajax-mail.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "130px";
+        document.getElementById("main").style.marginLeft = "130px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
+    <script>
+      var skillsDiv = jQuery('#competences');
+
+      jQuery(window).on('scroll', function() {
+        var winT = jQuery(window).scrollTop(),
+            winH = jQuery(window).height(),
+            skillsT = skillsDiv.offset().top;
+        if (winT + winH > skillsT) {
+          jQuery('.competence').each(function() {
+            jQuery(this).find('.competence-bar').animate({
+              width: jQuery(this).attr('data-percent')
+            }, 3000);
+          });
+        }
+      });
+    </script>
   </body>
 </html>

@@ -18,7 +18,6 @@ body {
   line-height: 170%;
   background-color: #030303;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .layout-fixed {
@@ -660,8 +659,12 @@ header {
 
 .about_img .about_img_1 {
   position: relative;
+  border-radius: 10px;
+  border: 2px solid white;
 }
+.about_img_1{
 
+}
 .about_img .about_img_2.top {
   top: 70px;
   left: 0;
@@ -1611,7 +1614,21 @@ footer p span {
   .block3 {
     height:30%;
   }
+  .icon-bar{
+    margin-right: 50%;
+  }
   /* .card */
+}
+@media only screen and (min-width: 800px){
+  #mySidebar,#main{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 800px){
+  .icon-bar{
+    margin-right: 20%;
+  }
 }
 .skills_container{
   display: flex;
@@ -2223,33 +2240,13 @@ footer p span {
   font-weight: bold;
 }
 
-.nav1 {
-  width: 40px;
-  animation: bounce-in-left 1.1s both;
-  position: relative;
-  left: 300px;
-  top: 20px;
-  width: 100px;
-  position: fixed;
-  z-index: 2;
-  top: 20px;
-  left: 10px;
-  padding: 20px 0;
-  visibility: hidden;
 
-}
 .titre2{
   transform: translate(80px,10px);
   font-weight: bold;
 }
 
-.nav1 a {
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  padding: 15px;
-}
+
 
 @keyframes bounce-in-left {
   0% {
@@ -2386,3 +2383,624 @@ a:hover {
   text-decoration: none;
   border: 1px solid #fff;
 }
+.noms_job{
+  width: 100%;
+  height: 500px;
+}
+.noms_job p,h1{
+  transform: translateX(35%);
+}
+.noms_job h1{
+  font-size: 140px;
+  transform: translateX(25%);
+}
+.noms_job p{
+  font-size: 20px;
+}
+
+.sidebar {
+  height: 70%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a:nth-child(2) {
+  padding: 8px 15px ;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.sidebar a:nth-child(3) {
+  padding: 8px 15px ;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.sidebar a:nth-child(4) {
+  padding: 8px 15px ;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.sidebar a:nth-child(5) {
+  padding: 8px 15px ;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.sidebar a:nth-child(6) {
+  padding: 8px 15px ;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  background-color: #fff;
+
+}
+.sidebar a:nth-child(7) {
+  padding: 8px 15px ;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.sidebar a:hover {
+  color: darkslategrey;
+  text-decoration: underline;
+  transition: underline 0.3s all;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 80px;
+}
+.closebtn {
+  background-color: transparent;
+  color: white;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/*
+.mysidebar_item{
+}
+*/
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.menu-trigger, .close-trigger {
+
+  display: block;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 5;
+  position: fixed;
+}
+.menu-trigger:hover .menu-trigger-bar:before, .close-trigger:hover .menu-trigger-bar:before {
+  width: 100%;
+}
+.menu-trigger:hover .close-trigger-bar:before, .close-trigger:hover .close-trigger-bar:before {
+  width: 100%;
+}
+.close-trigger {
+  z-index: 5;
+  top: 42px;
+}
+.menu-trigger-bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 6px;
+  transform: rotate(-45deg);
+
+}
+.menu-trigger-bar:before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.menu-trigger-bar.top {
+  width: 50%;
+}
+.menu-trigger-bar.middle:before {
+  left: auto;
+  right: 0;
+}
+.menu-trigger-bar.bottom {
+  width: 50%;
+  margin-left: 50%;
+}
+
+
+
+.container_cards {
+  height: 100%;
+  width: 100%;
+  top: 60px;
+  display: flex;
+  /*  display: block;*/
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 400px;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 20%;
+  top: 10%;
+  z-index: 3;
+}
+/*
+.card:nth-child(3) {
+display: flex;
+height: 280px;
+width: 400px;
+background-color: #17141d;
+border-radius: 10px;
+box-shadow: -1rem 0 3rem #000;
+transition: 0.4s ease-out;
+position: relative;
+transform: translate(-600px,280px);
+}
+*/
+
+
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar_cards {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  height: 5px;
+  width: 90%;
+}
+
+.emptybar_cards {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar_cards {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, black 0%, grey 65%, white 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar_cards {
+  width: 180px;
+  transition: 0.4s ease-out;
+}
+
+.description {
+  justify-content: center;
+  /*  margin-top: 110px;*/
+  text-align: justify;
+  font-size: 20px;
+}
+.description p{
+  color: white;
+  opacity: -2;
+  transition: 0.4s all;
+  transform: translateY(110px);
+  padding: 15px;
+}
+.card:hover p{
+  opacity: 1;
+}
+
+
+
+@media (min-width: 1200px){
+  .card:nth-child(3) {
+    display: flex;
+    height: 280px;
+    width: 400px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    transform: translate(-600px,280px);
+  }
+}
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 991px){
+  .container_cards {
+    height: 100%;
+    width: 100%;
+    top: 60px;
+    /*  display: flex;*/
+    display: block;
+  }
+
+  .card {
+    display: block;
+    height: 280px;
+    width: 400px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 2%;
+    top: 10%;
+  }
+
+
+
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+
+  .bar_cards {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    height: 5px;
+    width: 90%;
+  }
+
+  .emptybar_cards {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+
+  .filledbar_cards {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, black 0%, grey 65%, white 100%);
+    transition: 0.6s ease-out;
+  }
+
+  .card:hover .filledbar_cards {
+    width: 180px;
+    transition: 0.4s ease-out;
+  }
+
+  .description {
+    justify-content: center;
+    /*  margin-top: 110px;*/
+    text-align: justify;
+    font-size: 20px;
+  }
+  .description p{
+    color: white;
+    opacity: -2;
+    transition: 0.4s all;
+    transform: translateY(140px);
+    padding: 15px;
+
+  }
+
+
+
+
+
+  @media (max-width: 767px){
+    .container_cards {
+      height: 100%;
+      width: 100%;
+      top: 60px;
+      /*  display: flex;*/
+      display: block;
+    }
+
+    .card {
+      display: block;
+      height: 280px;
+      width: 300px;
+      background-color: #000;
+      border-radius: 10px;
+      box-shadow: -1rem 0 3rem #000;
+      transition: 0.4s ease-out;
+      position: relative;
+      left: 5%;
+      top: 10%;
+    }
+
+
+
+
+    .title {
+      color: white;
+      font-weight: 300;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+    }
+
+    .bar_cards {
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      height: 5px;
+      width: 90%;
+    }
+
+    .emptybar_cards {
+      background-color: #2e3033;
+      width: 100%;
+      height: 100%;
+    }
+
+    .filledbar_cards {
+      position: absolute;
+      top: 0px;
+      z-index: 3;
+      width: 0px;
+      height: 100%;
+      background: rgb(0,154,217);
+      background: linear-gradient(90deg, black 0%, grey 65%, white 100%);
+      transition: 0.6s ease-out;
+    }
+
+    .card:hover .filledbar_cards {
+      width: 180px;
+      transition: 0.4s ease-out;
+    }
+
+    .description {
+      justify-content: center;
+      /*  margin-top: 110px;*/
+      font-size: 15px;
+    }
+    .description p{
+      color: white;
+      opacity: -2;
+      transition: 0.4s all;
+      transform: translateY(140px);
+      padding: 10px;
+
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 575px){
+      .container_cards {
+        height: 100%;
+        width: 100%;
+        top: 60px;
+        /*  display: flex;*/
+        display: block;
+      }
+
+      .card {
+        display: block;
+        height: 280px;
+        width: 300px;
+        background-color: #000;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #000;
+        transition: 0.4s ease-out;
+        position: relative;
+        left: 2%;
+        top: 10%;
+      }
+
+
+
+
+      .title {
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+      }
+
+      .bar_cards {
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        height: 5px;
+        width: 90%;
+      }
+
+      .emptybar_cards {
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+      }
+
+      .filledbar_cards {
+        position: absolute;
+        top: 0px;
+        z-index: 3;
+        width: 0px;
+        height: 100%;
+        background: rgb(0,154,217);
+        background: linear-gradient(90deg, black 0%, grey 65%, white 100%);
+        transition: 0.6s ease-out;
+      }
+
+      .card:hover .filledbar_cards {
+        width: 180px;
+        transition: 0.4s ease-out;
+      }
+
+      .description {
+        justify-content: center;
+        /*  margin-top: 110px;*/
+        font-size: 15px;
+      }
+      .description p{
+        color: white;
+        opacity: -2;
+        transition: 0.4s all;
+        transform: translateY(140px);
+        padding: 10px;
+
+      }
+
+
+
+
+
+
+
+      @media (max-width: 400px){
+        .container_cards {
+          height: 100%;
+          width: 100%;
+          top: 60px;
+          /*  display: flex;*/
+          display: block;
+        }
+
+        .card {
+          display: block;
+          height: 280px;
+          width: 300px;
+          background-color: #000;
+          border-radius: 10px;
+          box-shadow: -1rem 0 3rem #000;
+          transition: 0.4s ease-out;
+          position: relative;
+          left: 2%;
+          top: 10%;
+        }
+
+
+        .title {
+          color: white;
+          font-weight: 300;
+          position: absolute;
+          left: 20px;
+          top: 15px;
+        }
+
+        .bar_cards {
+          position: absolute;
+          top: 100px;
+          left: 10px;
+          height: 5px;
+          width: 90%;
+        }
+
+        .emptybar_cards {
+          background-color: #000;
+          width: 100%;
+          height: 100%;
+        }
+
+        .filledbar_cards {
+          position: absolute;
+          top: 0px;
+          z-index: 3;
+          width: 0px;
+          height: 100%;
+          background: white;
+          background: linear-gradient(90deg, black 0%, grey 65%, white 100%);
+          transition: 0.6s ease-out;
+        }
+
+        .card:hover .filledbar_cards {
+          width: 180px;
+          transition: 0.4s ease-out;
+        }
+
+        .description {
+          justify-content: center;
+          /*  margin-top: 110px;*/
+          font-size: 15px;
+        }
+        .description p{
+          color: white;
+          opacity: -2;
+          transition: 0.4s all;
+          transform: translateY(140px);
+          padding: 10px;
+
+        }
+        
+        .menu_mobile{
+          position: absolute;
+        }
+        
