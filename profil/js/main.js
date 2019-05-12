@@ -1,11 +1,6 @@
 /*==============================================================================
 
- * Template Name: Zuman - Creative Personal Portfolio
- * Template URI: 
- * Author: ixtheme - (https://themeforest.net/user/ixtheme)
- * Description: Personal Portfolio Template
- * Version: 1.0
- * Copyright 2018 ixtheme
+ 
 
 ==============================================================================
     

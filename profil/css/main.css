@@ -17,6 +17,9 @@ body {
   line-height: 170%;
   background-color: #030303;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+
 }
 
 .layout-fixed {
@@ -173,7 +176,8 @@ li {
   overflow: hidden;
   position: fixed;
   z-index: 99999999;
-  display: flex
+  display: flex;
+
 }
 
 #preloader::before, #preloader::after {
@@ -234,7 +238,7 @@ li {
 @keyframes showLine {
   0% {
     width: 0;
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
@@ -251,7 +255,9 @@ li {
 
   100% {
     width: 100%;
-    opacity: 1
+    opacity: 1;
+    background-color: aqua;
+
   }
 }
 
