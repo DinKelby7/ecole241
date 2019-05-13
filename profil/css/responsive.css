@@ -12,7 +12,7 @@
   #mySidebar,#main{
     display: none;
   }
-  
+
 }
 
 @media (max-width: 1199px) {
@@ -23,12 +23,16 @@
 
     display: none;
   }
-  
+
 }
 
 /* Large devices (desktops, 991px and down) */
 
 @media (max-width: 991px) {
+  body{
+    overflow-x: hidden;
+  }
+
   .nav-btn {
     position: absolute;
     top: 0;
@@ -37,7 +41,7 @@
     display: inline-block;
     cursor: pointer;
   }
-  
+
   .menu_items {
     text-align: center;
     position: fixed;
@@ -138,6 +142,10 @@
 /* Medium devices (tablets, 768px and down) */
 
 @media (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
+
   .home_wrapper {
     height: 600px;
   }
@@ -311,6 +319,9 @@
   .noms_job p{
     font-size: 15px;
   }
+  body{
+    overflow-x: hidden;
+  }
 }
 
 /* extraSmall devices ( 400px and down) */
@@ -427,5 +438,8 @@
   }
   .noms_job p{
     font-size: 13px;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
