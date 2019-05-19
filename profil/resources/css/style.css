@@ -2,7 +2,7 @@ body {
   font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
   background-color: #fff;
-  color: #1d1d1d;
+  color: #000;
   margin: 0;
   padding: 0;
   letter-spacing: .02em
@@ -21,7 +21,7 @@ li {
   margin: 0
 }
 a {
-  color: #3346d1;
+  color: #fff;
   cursor: pointer
 }
 h1,
@@ -3757,11 +3757,11 @@ textarea {
   min-height: 100%
 }
 .body-page {
-  background-color: #1d1d1d;
+  background-color: #fff;
   color: #fff
 }
 .body-item {
-  background-color: #1d1d1d;
+  background-color: #000;
   color: #fff
 }
 .body-page {
