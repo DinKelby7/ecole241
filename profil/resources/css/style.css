@@ -5960,10 +5960,13 @@ button{
   padding: 5px;
   border-radius: 10px;
   outline:none;
+  border: 2px solid white;
+  box-shadow: 2px 1px 2px white;
 }
 button a{
   text-decoration: none;
-  color: #1D1D1D;
+  color: #000;
+    font-family: 'Roboto', sans-serif;
 }
 button a:hover{
   text-decoration: none;
@@ -6126,6 +6129,4 @@ button a:hover{
 .nav-link:hover{
   color: gray;
   text-decoration: line-through;
-}
-.formulaire{
 }

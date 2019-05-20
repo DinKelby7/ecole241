@@ -109,27 +109,6 @@ body {
   background-color: white;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
-.lien{
-  margin-left: 40%;
-  text-decoration: none;
-  color: white;
-  font-family: 'Oleo Script', cursive;
-  border: 3px solid white;
-  border-radius: 10px;
-  padding: 5px;
-  width: 100px;
-  background: linear-gradient(to right, purple,#28943C);
-}
-.lien a{
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-}
-a:hover{
-  text-decoration: line-through;
-  font-family: 'Oleo Script', cursive;
-
-}
 @media (min-width: 1200px){}
 @media (max-width: 1199px){
   .outer-ring{
