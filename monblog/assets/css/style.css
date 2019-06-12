@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.png);
+    background-color: #181818;
+}
+
+
+
+.bg_menu{
+    background-image: url(../img/menu.png);   
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.display_none{
+    display: none;
+}
+.navbar a img{
+    width: 30px;
+    
+}
+.navbar a {
+    padding: 10px;
+}
+a{
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+}
+a:hover{
+    color: #fbb700;
+    text-decoration: none;
+}
+
+.menu_mobile{
+    transform: translateX(350px);
+    visibility: hidden;
+}
+
+
+.jumbotron{
+
+    border: 2px solid #fbb700;
+    background-color: black;
+    padding: 0;
+    display: flex;
+}
+
+.banner img{
+    position: absolute;
+    transform: translateY(-11px);
+}
+
+.button{
+    border: 1px solid  #fbb700;
+    color: #2f2e2e;
+    padding: 5px;
+}
+.time{
+    padding-top: 10px;
+    text-align: left;
+}
+/*PARTIE DU SIDEBLOCK*/
+.social_networks{
+    list-style-type: none;
+}
+.social_networks li {
+    display: inline-block;
+    margin: 10px;
+}
+.last_games a{
+    display: block;
+    color: white;
+    transition: 1s;
+}
+.last_games a:hover{
+    color: #fbb700;
+}
+hr{
+    background-color: #fbb700;
+
+}
+
+
+
+/*SYSTEME DE CLASSES POUR COMPLETER AVEC BOOSTRAP */
+
+.block_margin{
+    margin-bottom: 30px;
+}
+.block_margin_top{
+    margin-top: 30px;
+}
+.text_white{
+    color: white;
+}
+.img_me{
+    width: 400px;
+    height: 530px;
+}
+.send_button{
+  background-color:  #fbb700;  
+}
+.other_test a{
+    display: block;
+}
