@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.png);
+    background-color: #181818;
+    font-family: 'Zilla Slab', serif;
+}
+
+.bg_menu {
+    background-image: url(../img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.display_none {
+    display: none;
+}
+
+.navbar a img {
+    width: 30px;
+}
+
+.navbar a {
+    padding: 10px;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+}
+
+a:hover {
+    color: #fbb700;
+    text-decoration: none;
+}
+
+.menu_mobile {
+    transform: translateX(350px);
+    visibility: hidden;
+}
+
+.jumbotron {
+    border: 2px solid #fbb700;
+    padding: 0;
+    display: flex;
+    background-image: url(../img/background%20banner.jpg);
+    background-size: cover;
+}
+
+.jumbotron>h1 {
+    font-size: 105px;
+    transform: translate(450px, 10px);
+}
+
+.banner img {
+    position: absolute;
+    transform: translateY(-11px);
+}
+
+.button {
+    border: 1px solid #2f2e2e;
+    color: #fbb700;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    border: 1px solid #fbb700;
+    color: #2f2e2e;
+}
+
+.time {
+    padding-top: 10px;
+    text-align: left;
+}
+
+
+/*PARTIE DU SIDEBLOCK*/
+
+.social_networks {
+    list-style-type: none;
+}
+
+.social_networks li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.last_games a {
+    display: block;
+    color: white;
+    transition: 1s;
+}
+
+.last_games a:hover {
+    color: #fbb700;
+}
+
+hr {
+    background-color: #fbb700;
+}
+
+
+/*SYSTEME DE CLASSES POUR COMPLETER AVEC BOOSTRAP */
+
+.block_margin {
+    margin-bottom: 30px;
+}
+
+.block_margin_top {
+    margin-top: 30px;
+}
+
+.text_white {
+    color: white;
+}
+
+.img_me {
+    width: 400px;
+    height: 530px;
+}
+
+.send_button {
+    background-color: #fbb700;
+}
+
+.other_test a {
+    display: block;
+}
+
+.margtop {
+    margin-top: 10px;
+}
+
+.margtopplus {
+    margin-top: 30px;
+}
+
+.margleft {
+    margin-left: 15px;
+}
+
+.bg-blog {
+    background-color: #fbb700;
+}
+
+.intro {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.word_intro {
+    position: relative;
+    color: #fbb700;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.word_intro:hover {
+    color: white;
+    transition: 1s;
+}
+
+.word_intro span {
+    color: white;
+    transition: 1s;
+}
+
+.word_intro span:hover {
+    color: #fbb700;
+    transition: 1s;
+}
+
+
+/* PARTIE DE L'API  */
+
+.container_weather {
+    width: 300px;
+    background-color: #FFC107;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.app-title {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p {
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.notification {
+    background-color: #ffffff;
+    display: none;
+}
+
+.notification p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container {
+    width: 300px;
+    height: 260px;
+    background-color: #000000;
+}
+
+.weather-icon {
+    width: 300px;
+    height: 128px;
+    background-color: #FFC107;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value {
+    width: 300px;
+    height: 60px;
+}
+
+.temperature-value p {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    margin-bottom: 10px;
+}
+
+.temperature-value p:hover {
+    font-size: 5em;
+    color: #FFC107;
+}
+
+.temperature-value span {
+    color: #ffffff;
+    font-size: 0.5em;
+}
+
+.temperature-description {}
+
+.temperature-description p {
+    padding: 8px;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location {}
+
+.location p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+}
