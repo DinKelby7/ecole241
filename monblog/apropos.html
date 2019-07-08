@@ -2,31 +2,52 @@
 
 <html lang="fr">
     <head>
-        <title>Page Title</title>
-        <meta charset="UTF-8">
+        <title>Kel-blog</title>
+        <meta name="Content-Type" content="UTF-8">
+        <meta name="Content-Language" content="fr">
+        <meta name="Description" content="blog personnel de Din kelby-kevane sur lequel il donne son avis sur les nouvelles sortie jeux video , manga, et high-tech ainsi que des tests et reviews">
+        <meta name="Keywords" content="Din kelby,kel-blog,blog jeux video kel-blog,manga kel-blog">
+        <meta name="Copyright" content="Din kelby 2019">
+        <meta name="Author" content="Din Kelby">
+        <meta name="Publisher" content="Din Kelby">
+        <meta name="Identifier-Url" content="dinkelby.alwaysdata.net">
+        <meta name="Geography" content="Libreville,Gabon,00241">
         <meta name="viewport" content="initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg ">
-            <button class="navbar-toggler bg_menu" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link text_white" href="index.html">Acceuil</a>
-                    <a class="nav-item nav-link text_white" href="#">A propos</a>
-                    <a class="nav-item nav-link text_white" href="#">Test</a>
-                    <a class="nav-item nav-link text_white" href="#">Reviews</a>
-                </div>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-item nav-link text_white" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-item nav-link text_white" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link text_white" href="https://www.jeuxactu.com/tests/">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link text_white" href="https://www.jeuxactu.com/previews/">Previews</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="ex: Watch Dogs , hades...">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Rechercher</button>
+                </form>
             </div>
-            <a href=""><img src="assets/img/facebook-logo.png" alt=""></a>
-            <a href=""><img src="assets/img/instagram.png" alt=""></a>
-            <a href=""><img src="assets/img/twitter-logo-on-black-background.png" alt=""></a>
         </nav>
+
         <div class="jumbotron">
             <img src="assets/img/Frame__1_-removebg-preview.png" alt="" class="img-responsive">
 
@@ -36,10 +57,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4"><img src="assets/img/Moi2.jpg" alt="" class="img-thumbnail img_me "> </div>
-                <div class="col-md-7"><p class="text_white text-justify">
+                <div class="col-md-7"><p class="text_white text-justify margtop">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatibus perspiciatis fugit autem non ab. Mollitia similique illo odio, dicta vitae dignissimos, iusto laudantium, exercitationem dolor nostrum dolorem quibusdam sint.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, incidunt, totam. Ab quam, reprehenderit reiciendis minima, temporibus illum labore expedita magni tempora dolor alias eveniet placeat numquam soluta perspiciatis aperiam.</p>
-                    <p class="text_white text-justify">
+                    <p class="text_white text-justify margtop">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum cum voluptatibus magni similique numquam alias repellendus itaque, odio unde, doloribus, officia laboriosam! Neque tenetur, expedita eos numquam iusto beatae?
                     </p>
                     <div class="container contact-form">
@@ -57,14 +78,15 @@
                                     <div class="form-group">
                                         <input type="text" name="txtPhone" class="form-control" placeholder="Votre numero de telephone" value="" />
                                     </div>
-                                    <div class="form-group ">
-                                        <input type="submit" name="btnSubmit" class="btnContact btn btn-warning" value="Envoyer message" />
-                                    </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <textarea name="txtMsg" class="form-control" placeholder="Votre message *" style="width: 100%; height: 150px;"></textarea>
                                     </div>
+                                </div>
+                                <div class="form-group margleft">
+                                    <input type="submit" name="btnSubmit" class="btnContact btn btn-warning" value="Envoyer message" />
                                 </div>
                             </div>
                         </form>
@@ -76,11 +98,11 @@
         <!-- Footer -->
         <footer class="page-footer font-small special-color-dark pt-4">
 
-           
+
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3 text_white">© 2018 Copyright:
-                <a href=""> Din Kelby</a>
+            <div class="footer-copyright text-center py-3 text_white">© 2019 Copyright:
+                by<a href="https://www.linkedin.com/in/din-kelby-1b6298188/"> Din Kelby</a>
             </div>
             <!-- Copyright -->
 
