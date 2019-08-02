@@ -6868,6 +6868,9 @@ h4 {
     .carousel-swiper-beta .slider-container .legend {
         width: 100%
     }
+    .apropos {
+        text-align: justify;
+    }
 }
 
 @media(max-width:480px) {
@@ -6899,6 +6902,9 @@ h4 {
         opacity: .12;
         width: 80%
     }
+    .apropos {
+        text-align: justify;
+    }
 }
 
 @media(max-width:375px) {
@@ -6908,6 +6914,9 @@ h4 {
     }
     .page-footer .footer-right {
         right: 23%
+    }
+    .apropos {
+        text-align: justify;
     }
 }
 
@@ -6929,12 +6938,14 @@ h4 {
         opacity: .12;
         width: 100%
     }
+    .apropos {
+        text-align: justify;
+    }
 }
 
 .moi {
     width: 250px;
     height: 380px;
-    margin-right: 30px;
     border: 2px solid white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -6950,7 +6961,6 @@ h4 {
 }
 
 .apropos {
-    padding-left: 80px;
     text-align: justify;
 }
 
@@ -6959,7 +6969,6 @@ h4 {
 }
 
 button {
-    margin-left: 100px;
     border: 1px solid #343434;
     padding: 5px;
     outline: none;
