@@ -1,5 +1,5 @@
 body {
-    font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    font-family: 'Caveat' ;
     font-size: 1rem;
     background-color: #fff;
     color: #000;
@@ -7,11 +7,17 @@ body {
     padding: 0;
     letter-spacing: .02em
 }
-
+.bg_custom{
+background-image: url(../img/background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
 ul,
 li {
     list-style: none outside none;
-    margin: 0
+    margin: 0;
+    color: #000;
+
 }
 
 iframe {
@@ -25,8 +31,21 @@ li {
 }
 
 a {
-    color: #fff;
-    cursor: pointer
+    color: #000;
+    cursor: pointer;
+    font-family: 'Caveat' ;
+
+}
+.social_media:hover{
+    color: #000;
+    text-decoration: underline;
+    font-size: 100px;
+}
+.social_media{
+    color: #000;
+    cursor: pointer;
+    font-family: 'Caveat' ;
+    transition: 1s;
 }
 
 h1,
@@ -35,16 +54,24 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif
+    font-family: 'Caveat' ;
+    color: #000;
+
 }
 
 h3,
 h4 {
-    font-weight: 400
+    font-weight: 400;
+    color: #000;
+
 }
 
 p {
-    font-size: 1rem
+    font-size: 1rem;
+    font-family: 'Caveat';
+    color: #000;
+
+
 }
 
 audio,
@@ -6984,7 +7011,7 @@ button {
 
 button:hover {
     background-color: #1f1e1e;
-    color: #000;
+    color: #fff;
     border-radius: 5px;
     -webkit-border-radius: ;
     -moz-border-radius: ;
@@ -6994,7 +7021,7 @@ button:hover {
 
 button a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -7072,7 +7099,7 @@ button a:hover {
 .skill>p {
     font-size: 15px;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     margin: 0;
 }
 
@@ -7090,7 +7117,7 @@ button a:hover {
 .skill-bar {
     width: 100%;
     height: 15px;
-    background: #FFFFFF;
+    background: #1d1d1d;
     display: block;
     position: relative;
     border-radius: 10px;
@@ -7195,4 +7222,10 @@ button a:hover {
     border-right: 2px solid white;
     border-left: 2px solid white;
     transition: 2s;
+}
+.font_cool{
+    font-family: 'Satisfy';
+}
+.color_font{
+    color: #000;
 }
