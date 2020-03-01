@@ -93,6 +93,9 @@ video {
     p {
         font-size: 1rem
     }
+    .bg_custom{
+        background-color: gainsboro;
+    }
 }
 
 @media(min-width:1400px) {
@@ -7225,7 +7228,11 @@ button a:hover {
 }
 .font_cool{
     font-family: 'Satisfy';
+    color: #000;
 }
 .color_font{
     color: #000;
+}
+.margin{
+    padding: 10px;
 }
